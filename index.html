@@ -1,3 +1,5 @@
+<script>resizeTo(screen.availWidth, screen.availHeight);</script>
+
 <style>
 body{
 background-color:#000000;
@@ -10,107 +12,268 @@ background-position:center !important;
 ::-webkit-scrollbar-track {background: none;}
 ::-webkit-scrollbar-thumb {background: #666666;}
 
-#basicbox {
+#bannerbox {
 position:absolute;
-background-color:#111111;
 border:1px solid #FF8CEB;
-width:15%;
-height:60%;
-left:20%;
-top:20%;
+background-color:#0A0A0A;
+width:28%;
+height:15%;
+top:5%;
+left:35%;
+}
+
+#title1 {
+position:absolute;
+width:29%;
+height:90%;
+top:5%;
+left:1.5%;
+color:#FFD2FF;
+font-family:Berkshire Swash;
+text-align:center;
+font-size:180%;
+line-height:400%;
+}
+
+#title2 {
+position:absolute;
+width:29%;
+height:90%;
+top:5%;
+left:69.5%;
+color:#FFD2FF;
+font-family:Berkshire Swash;
+text-align:center;
+font-size:180%;
+line-height:400%;
 }
 
 #pic1 {
 position:absolute;
-border:5px solid #FF8CEB;
+border:1px solid #FFD2FF;
 border-radius:100%;
-width:80%;
-height:40%;
-top:5%;
-left:8%;
-background-image: url('https://i.imgur.com/7lxHtO4.png') !important; 
+height:20%;
+width:10%;
+top:2.5%;
+left:44%;
+background-image: url('https://i.imgur.com/AIudDNW.jpg') !important; 
 background-repeat:no-repeat !important; 
 background-position:center !important; 
 background-size:cover;
--webkit-transition: all 0.8s ease-out;
--moz-transition: all 0.8s ease-out;
-transition: all 0.8s ease-out;
 }
 
-#pic1:hover {
-background-image: url('https://i.imgur.com/CHPR7vl.png') !important; 
-background-repeat:no-repeat !important; 
-background-position:center !important; 
-background-size:cover;
--webkit-transition: all 0.8s ease-out;
--moz-transition: all 0.8s ease-out;
-transition: all 0.8s ease-out;
-}
-
-#basicinfo {
+#picbanner1 {
 position:absolute;
-width:85%;
-height:45%;
-top:50%;
-left:8%;
-color:#ffffff;
-font-size:100%;
-font-family:Share Tech;
-text-align:center;
+border:1px #FF8CEB;
+border-top-style: solid;
+border-bottom-style: solid;
+width:20%;
+height:20%;
+top:40%;
+left:15%;
+background-image: url('https://i.imgur.com/EFnfKcW.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:right !important; 
+background-size:contain;
+}
+
+#picbanner2 {
+position:absolute;
+border:1px #FF8CEB;
+border-top-style: solid;
+border-bottom-style: solid;
+width:20%;
+height:20%;
+top:40%;
+left:63%;
+background-image: url('https://i.imgur.com/4NJzPku.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:left !important; 
+background-size:contain;
 }
 
 #contentbox {
 position:absolute;
-background-color:#111111;
 border:1px solid #FF8CEB;
-width:42%;
+background-color:#0A0A0A;
+width:28%;
 height:60%;
-top:20%;
-left:38%;
-}
-
-#tabbox {
-position:absolute;
-width:90%;
-height:10%;
-left:5%;
-top:5%;
+top:25%;
+left:35%;
 }
 
 #content {
 position:absolute;
 padding:1%;
 overflow:auto;
-width:88%;
-height:74%;
-left:5%;
-top:18%;
+background-color:#141414;
+border:1px dashed #FFD2FF;
+width:80%;
+height:80%;
+left:9%;
+top:9%;
 color:#ffffff;
 font-family:Share Tech;
 font-size:80%;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#content:hover {
+-webkit-box-shadow: 0px 0px 14px 4px rgba(255,140,235,1);
+-moz-box-shadow: 0px 0px 14px 4px rgba(255,140,235,1);
+box-shadow: 0px 0px 14px 4px rgba(255,140,235,1);
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#basicbox {
+position:absolute;
+padding:1%;
+background-color:#141414;
+border:1px dashed #FFD2FF;
+height:80%;
+top:7.5%;
+width:40%;
+left:10%;
+color:#ffffff;
+font-family:Share Tech;
+font-size:75%;
+text-align:center;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#basicbox:hover {
+-webkit-box-shadow: 0px 0px 14px 0px rgba(255,140,235,1);
+-moz-box-shadow: 0px 0px 14px 0px rgba(255,140,235,1);
+box-shadow: 0px 0px 14px 0px rgba(255,140,235,1);
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#tabbox1 {
+position:absolute;
+padding:1%;
+border:1px dashed #FFD2FF;
+width:28%;
+height:5%;
+top:20%;
+left:50%;
+text-align:center;
+font-family:Share Tech;
+font-size:60%;
+text-transform:uppercase;
+color:#ffffff;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#tabbox1:hover {
+background-color:#141414;
+-webkit-box-shadow: 0px 0px 14px 0px rgba(255,140,235,1);
+-moz-box-shadow: 0px 0px 14px 0px rgba(255,140,235,1);
+box-shadow: 0px 0px 14px 0px rgba(255,140,235,1);
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#tabbox2 {
+position:absolute;
+padding:1%;
+border:1px dashed #FFD2FF;
+width:28%;
+height:5%;
+top:35%;
+left:50%;
+text-align:center;
+font-family:Share Tech;
+font-size:60%;
+text-transform:uppercase;
+color:#ffffff;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#tabbox2:hover {
+background-color:#141414;
+-webkit-box-shadow: 0px 0px 14px 0px rgba(255,140,235,1);
+-moz-box-shadow: 0px 0px 14px 0px rgba(255,140,235,1);
+box-shadow: 0px 0px 14px 0px rgba(255,140,235,1);
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#tabbox3 {
+position:absolute;
+padding:1%;
+border:1px dashed #FFD2FF;
+width:28%;
+height:5%;
+top:50%;
+left:50%;
+text-align:center;
+font-family:Share Tech;
+font-size:60%;
+text-transform:uppercase;
+color:#ffffff;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#tabbox3:hover {
+background-color:#141414;
+-webkit-box-shadow: 0px 0px 14px 0px rgba(255,140,235,1);
+-moz-box-shadow: 0px 0px 14px 0px rgba(255,140,235,1);
+box-shadow: 0px 0px 14px 0px rgba(255,140,235,1);
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#tabbox4 {
+position:absolute;
+padding:1%;
+border:1px dashed #FFD2FF;
+width:28%;
+height:5%;
+top:65%;
+left:50%;
+text-align:center;
+font-family:Share Tech;
+font-size:60%;
+text-transform:uppercase;
+color:#ffffff;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#tabbox4:hover {
+background-color:#141414;
+-webkit-box-shadow: 0px 0px 14px 0px rgba(255,140,235,1);
+-moz-box-shadow: 0px 0px 14px 0px rgba(255,140,235,1);
+box-shadow: 0px 0px 14px 0px rgba(255,140,235,1);
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
 }
 
 .tabs {
 display:inline-block;
-padding:1%;
-width:15%;
-height:75%;
-margin-left:6%;
-text-align:center;
-color:#999999;
-font-family:Share Tech;
-font-size:140%;
--webkit-transition: all 0.8s ease-out;
--moz-transition: all 0.8s ease-out;
-transition: all 0.8s ease-out;
-}
-
-.tabs:hover {
-background-color:#000000;
-color:#ffffff;
--webkit-transition: all 0.8s ease-out;
--moz-transition: all 0.8s ease-out;
-transition: all 0.8s ease-out;
+width:100%;
+height:100%;
+top:0%;
+left:0%;
 }
 
 #tab1,#tab2,#tab3,#tab4 {
@@ -146,23 +309,41 @@ font-family: Berkshire Swash;
 <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Share+Tech" rel="stylesheet">
 <script>function changeNavigation(id) {document.getElementById('content').innerHTML=document.getElementById(id).innerHTML}</script>
 
-<div id="basicbox">
+<div id="bannerbox">
+<div id="title1">
+Fractal
+</div>
+<div id="title2">
+Wonder
+</div>
+</div>
 <div id="pic1">
 </div>
-<div id="basicinfo">
-<br><b>Emotion</b><br>Wonder<br><br>
+
+<div id="picbanner1">
+<div id="basicbox">
+<b>Emotion</b><br>Wonder<br><br>
 <b>Species</b><br>Will-o'-the-Wisp<br><br>
 <b>Race</b><br>Fractal
 </div>
 </div>
 
-<div id="contentbox">
-<div id="tabbox">
+<div id="picbanner2">
+<div id="tabbox1">
 <span class="tabs" onClick="changeNavigation ('tab1')">Lore</span>
+</div>
+<div id="tabbox2">
 <span class="tabs" onClick="changeNavigation ('tab2')">Contract</span>
+</div>
+<div id="tabbox3">
 <span class="tabs" onClick="changeNavigation ('tab3')">Racials</span>
+</div>
+<div id="tabbox4">
 <span class="tabs" onClick="changeNavigation ('tab4')">Abilities</span>
 </div>
+</div>
+
+<div id="contentbox">
 <div id="content">
 <h1>Appearance</h1>
 Fractal Wisps are generally very small, only measuring roughly three feet in height. Their bodies are made from black ethereal energies which are very humanoid in appearance despite being little more than shadowy silhouettes. Within the layers of darkness is a bright spiritual light that shines through their eyes, hair, and sometimes even their cores. Their eyes don't separate into pupil or iris, staying one texture and color throughout, and their hair glows with the same color their eyes do, floating about and above their heads as though they are submerged underwater constantly. A Fractal's core is generally located where a human's hear would be in the center of their alleged chest area, and shines brightly when they are using magic, even through the darkness of their "bodies."
